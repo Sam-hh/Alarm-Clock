@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Alarm clock image -->
+        <img src="sources/alarm-clock.png" alt="Alarm Clock">
+
+        <!-- Clock display -->
+        <div id="clock" class="clock"></div>
+
+        <!-- Set alarm section -->
+        <div class="set-alarm">
+            <h2>Set Alarm</h2>
+            <!-- Inputs for hour, minute, and AM/PM -->
+            <input id="hour" type="number" placeholder="Hour" min="1" max="12" required >
+            <input id="minute" type="number" placeholder="Minute" min="0" max="59" required >
+            <select id="ampm">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+            <!-- Button to set the alarm -->
+            <button id="setAlarmButton">Set Alarm</button>
+        </div>
+
+        <!-- Alarm list -->
+        <div id="alarms" class="alarms">
+            <h2>Alarm List</h2>
+        </div>
+    </div>
+
+    <!-- Modal for alarm actions -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p id="modal-message"></p>
+            <!-- Buttons to stop or snooze-->
+            <button id="modal-stop">Stop</button>
+            <button id="modal-snooze">Snooze</button>
+        </div>
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
