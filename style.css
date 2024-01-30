@@ -1,0 +1,136 @@
+/* Reset and Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#7878f1, lightblue);
+}
+
+/* Container Styles */
+.container {
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: linear-gradient(lightblue, rgb(123, 123, 249));
+}
+
+.container img {
+    margin: 30px;
+}
+
+/* Clock Styles */
+.clock {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Set Alarm Styles */
+.set-alarm {
+    margin-bottom: 20px;
+}
+
+.set-alarm input[type="number"],
+.set-alarm input,
+select {
+    font-family: inherit;
+    font-size: 1rem;
+    width: 6rem;
+    margin: 5px;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+/* Alarms Styles */
+.alarms {
+    text-align: left;
+    padding: 10px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.alarms div {
+    margin-bottom: 5px;
+}
+
+/* Button Styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    text-align: center;
+}
+
+/* Modal Button Styles */
+#modal-stop,
+#modal-snooze {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#modal-stop:hover,
+#modal-snooze:hover {
+    background-color: #45a049;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .set-alarm input[type="number"],
+    .set-alarm input,
+    select {
+        width: 80%;
+    }
+}
