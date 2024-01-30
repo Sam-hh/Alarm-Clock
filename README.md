@@ -11,7 +11,7 @@ The Alarm Clock project is a simple web application that allows users to set and
   * Display Current Time: The clock displayed on the interface updates in real-time, showing the current hour, minute, and second.
   * Alarm Management: Users can view a list of alarms they have set and delete alarms as needed.
   * Stop Alarm: When an alarm goes off, users can stop it with the click of a button.
-  * Snooze Alarm: Users have the option to snooze an alarm, postponing it by a few minutes.
+  * Snooze Alarm: Users have the option to snooze an alarm, postponing it by 5 minutes.
   * Visual Alerts: The application provides visual alerts through modal pop-ups when an alarm is triggered.
 
 ### Technologies Used:
